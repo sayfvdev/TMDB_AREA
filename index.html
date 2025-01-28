@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="icon" href="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/227_Netflix_logo-512.png" type="image/png">
+	<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./style.css" />
+	<title>Kinoarea</title>
+</head>
+
+<body>
+	<header class="header"></header>
+
+
+	<div class="bg_image"></div>
+
+	<section class="now_playing">
+		<div class="container">
+			<div class="top_part">
+				<div class="top_left_part">
+					<h1>Сейчас в кино</h1>
+				</div>
+				<div class="top_centre_part">
+					<div class="line"></div>
+				</div>
+				<div class="top_right_part">
+
+				</div>
+			</div>
+			<div class="center_part">
+				<div class="mn_center_item">
+				</div>
+				<button class="all_news">Все новинки</button>
+			</div>
+		</div>
+	</section>
+
+	<section class="new_trailers">
+		<div class="container">
+			<div class="home_trailer">
+				<div class="box_trailer">
+					<h1 class="color">Новые трелейлер</h1>
+
+					<div>
+						<p class="color">Все трелейлер</p>
+						<i class='bx bx-arrow-back bx-rotate-180 icon' style='color:#ffffff'></i>
+					</div>
+				</div>
+
+				<div class="block">
+					<iframe width="100%" height="720"
+						src="https://www.youtube.com/embed/" title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+				</div>
+
+				<div class="last_icon">
+					<div class="social__trailer">
+						<h2 class="color">Форсаж 9</h2>
+						<img src="/img/social.png" alt="" />
+					</div>
+
+					<div class="reviews">
+						<div class="likes">
+							<img src="/img/like 1.png" alt="" />
+						</div>
+
+						<div class="dislike">
+							<img src="/img/dislike.png" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="swiper-container swiper">
+				<div class="swiper-wrapper trailers_list ">
+
+				</div>
+			</div>
+	</section>
+
+	<section class="popular_films">
+		<div class="container">
+			<div class="top_part">
+				<div class="top_left_part">
+					<h1>Популярные фильмы</h1>
+				</div>
+				<div class="top_centre_part">
+					<div class="line"></div>
+				</div>
+				<div class="top_right_part">
+					<p>Всё время</p>
+					<p>2024</p>
+					<p>2023</p>
+					<p>2022</p>
+					<p>2021</p>
+					<p>2020</p>
+					<p>2019</p>
+				</div>
+			</div>
+			<div class="mn_popular_box">
+
+			</div>
+		</div>
+	</section>
+
+	<section class="upcoming">
+		<div class="container">
+			<div class="inside">
+				<div class="top">
+					<h2>Ожидаемые новинки</h2>
+
+					<div class="right">
+						<button>prev</button>
+						<p>2/3</p>
+						<button>next</button>
+					</div>
+				</div>
+
+				<div class="pictures">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="popular_person now_playing">
+		<div class="container">
+			<div class="top_part">
+				<div class="top_left_part">
+					<h1>Популярные персоны</h1>
+				</div>
+				<div class="top_right_part">
+					<p>За год</p>
+					<p>За месяц</p>
+					<p>За неделю</p>
+				</div>
+			</div>
+			<div class="bottom_popular">
+				<div class="left_part_popular">
+				</div>
+				<div class="right_part_popular">
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="nav_div">
+				<nav class="footer_nav">
+					<ul>
+						<li><a href="#">Aфиша</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Персоны</a></li>
+						<li><a href="#">Ркйтинги</a></li>
+						<li><a href="#">Рецензии</a></li>
+						<li><a href="#">Каталог фильмов</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<div class="footer_info">
+				<p>&copy; 2024 Kinoarea. Все права защищены.</p>
+				<a href="#">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</footer>
+	<div class="modal search_modal"></div>
+
+	<script src="./main.js" type="module"></script>
+</body>
+
+</html>

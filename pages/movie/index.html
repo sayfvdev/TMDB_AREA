@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../../style.css" />
+		<title>Document</title>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+
+	<body>
+		<header class="header"></header>
+
+		<div class="bg_image"></div>
+		<div class="container_for_pages">
+			<section class="mn_block">
+				<div class="movie_img_box">
+					<img src="" alt="" class="profilePic" />
+				</div>
+				<div class="info_block">
+					<p class="top_link">
+						<span><a href="/">Главная ></a></span>
+						<span><a href="">Фильмы ></a></span>
+						<span class="movie_name">обег из Претории</span>
+					</p>
+					<h1 class="movie_name mn_name"></h1>
+					<h3 class="orig_name"></h3>
+					<div class="reyting_place">
+						<div class="movie-details">
+							<h2 class="title_reyting">7,8</h2>
+							<canvas id="ratingChart" width="40" height="40"></canvas>
+						</div>
+					</div>
+					<p class="description"></p>
+					<div class="block_for_Btn">
+						<button class="viewTr">
+							<i class="bx bx-play" style="color: #ffffff"></i> Смотреть трейлер
+						</button>
+						<div class="sm">
+							<p><i class="bx bxl-vk"></i></p>
+							<p><i class="bx bxl-instagram"></i></p>
+							<p><i class="bx bxl-facebook"></i></p>
+							<p><i class="bx bxl-twitter"></i></p>
+							<p><i class="bx bx-dots-horizontal-rounded"></i></p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="midle_part_of">
+				<button><i class="bx bxs-like" style="color: #ffffff"></i></button>
+				<button><i class="bx bxs-dislike" style="color: #ffffff"></i></button>
+				<button><i class="bx bxs-heart" style="color: #ffffff"></i></button>
+				<div class="btn_reyting">
+					<div class="progress"></div>
+				</div>
+				<span class="saved"></span>
+			</div>
+
+			<section>
+				<div class="bottom_section">
+					<div class="section_bottom">
+						<p>Год: <span class="year"></span></p>
+						<p>Страна: <span class="madeIn"></span></p>
+						<p>Слоган: <span class="tagline"></span></p>
+						<p>Сборы в мире <span class="sum"></span></p>
+						<p>Премьера (мир): <span class="screenplay"></span></p>
+						<p>Время: <span class="time"></span></p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<section class="starring">
+				<div class="top_section_type">
+					<h1>В главных ролях:</h1>
+					<p>
+						Все актёры
+						<span
+							><i
+								class="bx bx-arrow-back bx-rotate-180 icon"
+								style="color: #ffffff"
+							></i
+						></span>
+					</p>
+				</div>
+				<div class="mn_starring_box">
+					<div class="item">
+						<div class="starring_img">
+							<img src="" alt="" />
+						</div>
+						<p class="starring_name"></p>
+						<p class="starring_orig_name"></p>
+						<p class="starring_name_movie"></p>
+					</div>
+				</div>
+			</section>
+			<section class="trailers_slc">
+				<div class="top_section_type">
+					<h1>Трейлеры фильма</h1>
+					<p>
+						Все трейлеры<span
+							><i
+								class="bx bx-arrow-back bx-rotate-180 icon"
+								style="color: #ffffff"
+							></i
+						></span>
+					</p>
+				</div>
+				<div class="iframe_box" id="trailer">
+					<iframe
+						width="100%"
+						height="822px"
+						src="https://www.youtube.com/embed/"
+						title="YouTube video player"
+						frameborder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerpolicy="strict-origin-when-cross-origin"
+						allowfullscreen
+					></iframe>
+				</div>
+				<div class="name_trailers_slc">
+					<div class="right_part_trailers">
+						<p class="movie_name name_trailers"></p>
+						<div class="sm icona">
+							<p><i class="bx bxl-vk"></i></p>
+							<p><i class="bx bxl-instagram"></i></p>
+							<p><i class="bx bxl-facebook"></i></p>
+							<p><i class="bx bxl-twitter"></i></p>
+							<p><i class="bx bx-dots-horizontal-rounded"></i></p>
+						</div>
+					</div>
+					<div class="midle_part_of">
+						<button><i class="bx bxs-like" style="color: #ffffff"></i></button>
+						<button>
+							<i class="bx bxs-dislike" style="color: #ffffff"></i>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="posters_slc">
+				<div class="top_section_type">
+					<h1>Постеры к фильму</h1>
+					<p>
+						Все постеры<span
+							><i
+								class="bx bx-arrow-back bx-rotate-180 icon"
+								style="color: #ffffff"
+							></i
+						></span>
+					</p>
+				</div>
+				<p class="movie_name"></p>
+				<div class="mn_poster_box">
+					<div class="item_poster">
+						<img src="" alt="" />
+					</div>
+				</div>
+			</section>
+			<section class="similar">
+				<h1 class="text_sml">Похожие фильмы</h1>
+				<div class="mn_similar_box"></div>
+			</section>
+		</div>
+		<div class="modal search_modal"></div>
+
+		<script type="module" src="./selectedmovie.js"></script>
+	</body>
+</html>
